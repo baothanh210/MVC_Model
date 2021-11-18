@@ -1,0 +1,14 @@
+<h1>Danh sách sinh viên</h1>
+<h2><a href="/show/create">Thêm sinh viên</a></h2> 
+<table style="border: 1px solid black;">
+
+    <% student.forEach(function(student) { %>
+       <tr><td> <a href="show/<%=student.idStudent %>">Id: <%= student._id %></a></td></tr>
+       <tr><td><p>Họ tên: <%= student.name %></p></td></tr>
+       <tr><td><p>Mã số sinh viên: <%= student.idStudent %></p></td></tr>
+       <tr><td><p>Ngày sinh: <%= student.birthday %></p></td></tr>
+       <tr></tr><td><p>Số điện thoại: <%= student.phone %></p></td></tr>
+
+    <% }) %>
+
+</table>
